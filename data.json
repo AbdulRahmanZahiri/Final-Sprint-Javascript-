@@ -1,0 +1,53 @@
+[{
+    "name": "Abdul Rahman",
+    "IdNumber": "A111",
+    "phoneNumber": "709-999-7988",
+    "Address": "100 henry place",
+    "Gender": "Male",
+    "salary": 85000
+},
+
+{
+    "name": "Amanda",
+    "IdNumber": "A112",
+    "phoneNumber": "709-789-7988",
+    "Address": "100 fox place",
+    "Gender": "female",
+    "salary": 140000
+},
+
+{
+    "name": "Noah",
+    "IdNumber": "A113",
+    "phoneNumber": "709-069-2348",
+    "Address": "100 kenmount terrace",
+    "Gender": "Male",
+    "salary": 105000
+},
+
+{
+    "name": "Alec",
+    "IdNumber": "A114",
+    "phoneNumber": "709-769-2388",
+    "Address": "20 rich road",
+    "Gender": "Male",
+    "salary": 150000
+},
+
+{
+    "name": "Sarah",
+    "IdNumber": "A115",
+    "phoneNumber": "709-234-4218",
+    "Address": "34 empire ave",
+    "Gender": "female",
+    "salary": 75000
+},
+
+{
+    "name": "Walid",
+    "IdNumber": "A116",
+    "phoneNumber": "709-775-3456",
+    "Address": "20 topsail road",
+    "Gender": "Male",
+    "salary": 100000
+}]

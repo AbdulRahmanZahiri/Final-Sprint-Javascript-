@@ -1,0 +1,247 @@
+/* Enhanced body with animated gradient background */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Floating shapes background animation */
+body::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 200px;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  z-index: 0;
+  animation: float 6s ease-in-out infinite;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  right: -50px;
+  width: 300px;
+  height: 300px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  z-index: 0;
+  animation: float 8s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+  50% {
+    transform: translateY(-20px) rotate(45deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+}
+
+/* Particle background effect */
+.particle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  animation: drift 10s infinite linear;
+  z-index: 1;
+}
+
+.particle:nth-child(1) {
+  left: 10%;
+  top: 20%;
+}
+
+.particle:nth-child(2) {
+  left: 40%;
+  top: 70%;
+}
+
+.particle:nth-child(3) {
+  left: 80%;
+  top: 30%;
+}
+
+.particle:nth-child(4) {
+  left: 20%;
+  top: 90%;
+}
+
+.particle:nth-child(5) {
+  left: 50%;
+  top: 50%;
+}
+
+.particle:nth-child(6) {
+  left: 70%;
+  top: 10%;
+}
+
+.particle:nth-child(7) {
+  left: 90%;
+  top: 80%;
+}
+
+@keyframes drift {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-20px, -20px);
+  }
+}
+
+/* Glassmorphism container */
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  text-align: center;
+  max-width: 700px;
+  margin: 20px;
+  z-index: 2;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Smooth hover effect on container */
+.container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.2);
+}
+
+/* High-end header with neon effect */
+h1 {
+  font-size: 3.5em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-shadow: 0 0 5px #00e6e6, 0 0 10px #00e6e6, 0 0 15px #00e6e6,
+    0 0 20px #00e6e6, 0 0 25px #00e6e6, 0 0 30px #00e6e6, 0 0 35px #00e6e6;
+  animation: neon 1.5s ease-in-out infinite alternate;
+  position: relative;
+}
+
+@keyframes neon {
+  from {
+    text-shadow: 0 0 10px #00e6e6, 0 0 20px #00e6e6, 0 0 30px #00e6e6,
+      0 0 40px #00e6e6, 0 0 50px #00e6e6, 0 0 60px #00e6e6, 0 0 70px #00e6e6;
+  }
+  to {
+    text-shadow: 0 0 20px #1a8f8f, 0 0 30px #1a8f8f, 0 0 40px #1a8f8f,
+      0 0 50px #1a8f8f, 0 0 60px #1a8f8f, 0 0 70px #1a8f8f, 0 0 80px #1a8f8f;
+  }
+}
+
+/* Smooth hover effect for paragraphs */
+p {
+  perspective: 1000px;
+  position: relative;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+  color: #fff;
+  font-weight: bold;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+p:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Ultra-fancy buttons with shiny effect and smooth hover */
+button {
+  background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 200% 200%;
+  border: none;
+  border-radius: 50px;
+  padding: 15px 30px;
+  color: white;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2), 0 0 40px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  width: 300%;
+  height: 300%;
+  top: 50%;
+  left: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  transform: translate(-50%, -50%) rotate(45deg);
+  transition: all 0.75s ease;
+  opacity: 0;
+}
+
+button:hover::before {
+  opacity: 1;
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+button:hover {
+  background-position: 100% 0%;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2), 0 6px 30px rgba(255, 165, 0, 0.4);
+}
+
+/* Enhanced footer with animated text */
+footer {
+  margin-top: 40px;
+  font-size: 1em;
+  color: #fff;
+  text-align: center;
+  animation: fadeIn 3s ease-in-out infinite alternate;
+  z-index: 2;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
